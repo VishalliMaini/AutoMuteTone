@@ -1,6 +1,6 @@
 # Audio Mixer with GStreamer in Go
 
-This project implements an audio mixer using GStreamer in Go. The application combines audio from a microphone and a test tone generator, adjusting the output based on the microphone's audio level.
+This project implements an audio mixer using GStreamer in Go. The application takes audio from a microphone and a test tone generator, adjusting the output based on the microphone's audio level.
 
 ## Table of Contents
 
@@ -97,21 +97,18 @@ The application is structured as follows:
    - `audiomixer`: Mixes the audio from the test tone and the microphone.
    
    - `autoaudiosink`: Outputs the mixed audio to the default audio output device.
-   
-   
-3. **Element Configuration**: The frequency of the test tone is set to 440 Hz (A4 note).
 
 
-4. **Linking Elements**: The elements are linked together to form a complete audio processing pipeline.
+3. **Linking Elements**: The elements are linked together to form a complete audio processing pipeline.
 
 
-5. **Adding a Probe**: A probe is added to the `level` element to monitor the RMS (Root Mean Square) level of the microphone input. Based on the RMS value, the application decides whether to play or stop the test tone.
+4. **Adding a Probe**: A probe is added to the `level` element to monitor the RMS (Root Mean Square) level of the microphone input. Based on the RMS value, the application decides whether to play or stop the test tone.
 
 
-6. **Pipeline Execution**: The pipeline is set to the `PLAYING` state, and the application enters a loop to wait for events (End of Stream or errors) or termination signals.
+5. **Pipeline Execution**: The pipeline is set to the `PLAYING` state, and the application enters a loop to wait for events (End of Stream or errors) or termination signals.
 
 
-7. **Cleanup**: Upon termination, the pipeline is set to the `NULL` state to clean up resources.
+6. **Cleanup**: Upon termination, the pipeline is set to the `NULL` state to clean up resources.
 
 
 ## Challenges Faced
