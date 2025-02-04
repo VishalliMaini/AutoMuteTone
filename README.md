@@ -63,13 +63,15 @@ This project implements an audio mixer using GStreamer in Go. The application ta
    ```bash
    go mod init audio-mute
    ```
+   This will creat a new go.mod: module assessment_go
+
 4. Create the main Go file:
    ```bash
    nano main.go
    ```
    Write your application code in `main.go`, then save and exit the editor.
 
-5. Tidy up the module dependencies:
+5. Tidy up the module dependencies and add module requirements and sums:
    ```bash
    go mod tidy
    ```
