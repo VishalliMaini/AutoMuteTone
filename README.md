@@ -63,7 +63,7 @@ This project implements an audio mixer using GStreamer in Go. The application ta
    ```bash
    go mod init audio-mute
    ```
-   This will creat a new go.mod: module assessment_go
+   This will creat a new go.mod
 
 4. Create the main Go file:
    ```bash
