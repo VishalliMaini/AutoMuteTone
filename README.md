@@ -75,8 +75,7 @@ This project implements an audio mixer using GStreamer in Go. The application ta
    ```
 6. Build and run the application:
    ```bash
-   go build -o audio-mixer
-   ./audio-mixer
+   go run main.go
    ```
 
 ## Approach
