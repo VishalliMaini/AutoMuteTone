@@ -1,4 +1,4 @@
-# Audio Mixer with GStreamer in Go
+# Audio Mixer with GStreamer in Go lang
 
 This project implements an audio mixer using GStreamer in Go. The application takes audio from a microphone and a test tone generator, adjusting the output based on the microphone's audio level.
 
