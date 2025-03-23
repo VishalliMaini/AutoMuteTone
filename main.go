@@ -49,7 +49,7 @@ func addLevelProbe(level *gst.Element, playbin *gst.Element) {
             rmsLevel := calculateRMS(buffer)
 
             // Log the RMS level for debugging
-            log.Printf("📢 RMS Level is : %f", rmsLevel)
+            log.Printf("📢 RMS Level is thid  : %f", rmsLevel)
 
             // Define a threshold for speech detection
             speechThreshold := 10000.0 // Adjust this threshold as needed
