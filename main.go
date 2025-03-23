@@ -56,7 +56,7 @@ func addLevelProbe(level *gst.Element, playbin *gst.Element) {
 
             // If RMS value exceeds the threshold, mute the audio stream (speech detected)
             if rmsLevel > speechThreshold {
-                log.Println("🎤 User is speaking, muting audio stream...")
+                log.Println("🎤 User is speaking and , muting audio stream...")
                 playbin.SetProperty("volume", 0.0) // Mute audio stream
             } else {
                 log.Println("🤫 No significant noise detected, playing audio stream...")
